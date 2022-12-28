@@ -1,11 +1,12 @@
 import { ThemeProvider } from 'styled-components'
-import { GlobalStyle, PageContainer, Title } from './globalStyles'
-import Navbar from './components/Navbar'
+import GlobalStyle from '../styles/globalStyles'
+import Navbar from '../components/Navbar'
+import { Outlet } from 'react-router-dom'
 
 const theme = {
   colors: {
-    primary: '#20CE65',
-    secondary: '#ff5b04',
+    primary: '#219ebc',
+    secondary: '#fb8500',
     bg_color: '#f2f2f2',
     dark: '#001824',
     black: '#000f16'
@@ -15,16 +16,16 @@ const theme = {
   }
 }
 
-function App () {
+function Root () {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Navbar />
-      <PageContainer>
-        <Title>Sitio web en desarrollo</Title>
-      </PageContainer>
+      <div id='detail'>
+        <Outlet />
+      </div>
     </ThemeProvider>
   )
 }
 
-export default App
+export default Root

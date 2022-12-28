@@ -1,16 +1,14 @@
 import { useState } from 'react'
-import { Link } from 'wouter'
-import { FaHamburger, FaTimes } from 'react-icons/fa'
+import { FaTimes } from 'react-icons/fa'
+import { RxHamburgerMenu } from 'react-icons/rx'
 import {
   BurgerIcon,
   FlexContainer,
   FontLogo,
   LinksLabel,
-  Logo,
   NavbarContainer,
   NavMenu
 } from './styles'
-import logoBlanco from '../../assets/logoBlanco.png'
 
 function Navbar () {
   const [showNavMenu, setShowNavMenu] = useState(false)
@@ -20,15 +18,15 @@ function Navbar () {
   return (
     <NavbarContainer>
       <FlexContainer>
-        <Link to='/'>
+        <LinksLabel to='/'>
           <FontLogo>BulkTech</FontLogo>
           {/* <Logo src={logoBlanco} alt='Logo' /> */}
-        </Link>
+        </LinksLabel>
       </FlexContainer>
 
       <FlexContainer>
         <BurgerIcon onClick={handleClick}>
-          {showNavMenu ? <FaTimes /> : <FaHamburger />}
+          {showNavMenu ? <FaTimes /> : <RxHamburgerMenu />}
         </BurgerIcon>
         <NavMenu
           showNavMenu={showNavMenu}
@@ -39,7 +37,7 @@ function Navbar () {
             <LinksLabel to='/'>Inicio</LinksLabel>
           </li>
           <li>
-            <LinksLabel to='/community-link'>CommunityLink</LinksLabel>
+            <LinksLabel to='community-link'>CommunityLink</LinksLabel>
           </li>
           <li>
             <LinksLabel to='/overwatch'>Overwatch</LinksLabel>

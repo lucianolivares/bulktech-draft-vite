@@ -1,5 +1,5 @@
+import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
-import { Link } from 'wouter'
 
 export const NavbarContainer = styled.nav`
   position: fixed;
@@ -45,7 +45,7 @@ export const NavMenu = styled.ul`
   list-style-type: none;
   @media screen and (max-width: 768px) {
     padding: 1rem;
-    box-shadow: 8px 13px 28px 0px rgba(0, 0, 0, 0.76);
+    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     width: 50%;
     top: 5rem;
@@ -53,7 +53,7 @@ export const NavMenu = styled.ul`
     right: ${({ showNavMenu }) => (showNavMenu ? '0%' : '-50%')};
     opacity: 1;
     transition: all 0.5s ease;
-    background: ${({ theme }) => theme.colors.dark};
+    background: ${({ theme }) => theme.colors.bg_color};
   }
 `
 
@@ -66,13 +66,14 @@ export const FontLogo = styled.h2`
   color: #000;
 `
 
-export const LinksLabel = styled(Link)`
+export const LinksLabel = styled(NavLink)`
   cursor: pointer;
+  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   color: #000;
   font-size: 1.3rem;
   &.active {
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.secondary};
     transition: 0.1s ease-in-out;
   }
   :hover {

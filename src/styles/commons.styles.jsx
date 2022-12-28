@@ -1,25 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components'
-
-export const GlobalStyle = createGlobalStyle`
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Koulen', cursive;
-    color: white;
-    scroll-behavior: smooth;
-  } 
-
-  h1,
-  button {
-    color: white;
-  }
-
-  p, span {
-      font-family: 'Poppins', sans-serif;
-      color: white;
-  }
-  `
+import styled from 'styled-components'
 
 export const PageContainer = styled.div`
   display: grid;
