@@ -4,7 +4,7 @@ import { PageContainer, Title } from '../styles/commons.styles'
 const Home = () => {
   return (
     <PageContainer>
-      <Title>Inicio</Title>
+      <Title>En desarrollo, disculpe las molestias</Title>
     </PageContainer>
   )
 }
