@@ -1,18 +1,19 @@
 import React from 'react'
-import { PageContainer, Title } from '../styles/commons.styles'
+import { PageContainer } from '../styles/commons.styles'
 import Hero from '../components/Hero'
 import Conectividad from '../components/Conectividad'
+import Seguridad from '../components/Seguridad'
+import Domotica from '../components/Domotica'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
     <PageContainer>
       <Hero />
       <Conectividad />
-      <Hero />
-
-      <Hero />
-
-      <Title>Pagina web en desarrollo ⚒️👷‍♂️</Title>
+      <Seguridad />
+      <Domotica />
+      <Footer />
     </PageContainer>
   )
 }

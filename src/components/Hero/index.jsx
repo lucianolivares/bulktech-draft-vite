@@ -38,7 +38,7 @@ function Hero () {
           </LinksContainer>
         </TextWrapper>
       </Column>
-      <Column>
+      <Column hide>
         <ImgWrapper>
           <Img src={world} alt='world-internet' />
         </ImgWrapper>

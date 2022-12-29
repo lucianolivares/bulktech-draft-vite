@@ -2,13 +2,12 @@ import styled from 'styled-components'
 
 export const HeroContainer = styled.div`
   display: grid;
-  min-height: 90vh;
+  min-height: 50vh;
   padding: 0 4rem;
   grid-template-columns: 50% 50%;
   z-index: 1;
   @media screen and (max-width: 920px) {
     grid-template-columns: 100%;
-    min-height: 50vh;
   }
 `
 
@@ -37,7 +36,6 @@ export const ImgWrapper = styled.div`
 
 `
 export const Img = styled.img`
-  border-radius: 100px;
   max-height: 25rem;
   max-width: 100%;
   object-fit: scale-down;
