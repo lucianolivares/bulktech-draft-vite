@@ -10,7 +10,7 @@ export const NavbarContainer = styled.nav`
   height: 4rem;
   justify-content: space-between;
   z-index: 999;
-  background-color: ${({ theme }) => theme.colors.bg_color};
+  background-color: ${({ theme }) => theme.colors.gray};
 `
 
 export const FlexContainer = styled.div`
@@ -73,11 +73,11 @@ export const LinksLabel = styled(NavLink)`
   color: #000;
   font-size: 1.3rem;
   &.active {
-    color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.seguridad};
     transition: 0.1s ease-in-out;
   }
   :hover {
-    color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.seguridad};
   }
 `
 
@@ -85,7 +85,7 @@ export const BurgerIcon = styled.div`
   color: #000;
   display: none;
   :hover {
-    color: ${({ theme }) => theme.colors.secondary};
+    color: ${({ theme }) => theme.colors.seguridad};
   }
   @media screen and (max-width: 768px) {
     font-size: 2rem;

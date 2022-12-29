@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const PageContainer = styled.div`
   display: grid;
   min-height: 100vh;
-  background-color: ${({ theme }) => theme.colors.bg_color};
+  background-color: ${({ theme }) => theme.colors.gray};
   padding-top: 4rem;
 
   .text-center {
@@ -18,7 +18,6 @@ export const PageContainer = styled.div`
 `
 export const Title = styled.h1`
   font-size: clamp(3rem, 4vw + 1rem, 5rem);
-  color: black;
   text-align: center;
 
   &.primary {

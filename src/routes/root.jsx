@@ -3,13 +3,14 @@ import GlobalStyle from '../styles/globalStyles'
 import Navbar from '../components/Navbar'
 import { Outlet } from 'react-router-dom'
 
-const theme = {
+export const theme = {
   colors: {
-    primary: '#219ebc',
-    secondary: '#fb8500',
-    bg_color: '#f2f2f2',
-    dark: '#001824',
-    black: '#000f16'
+    conectividad: '#219ebc',
+    seguridad: '#fb8500',
+    domotica: '#8ecae6 ',
+    dark: '#023047 ',
+    black: '#000f16',
+    gray: '#f2f2f2'
   },
   media: {
     medium: '768px'
@@ -21,9 +22,7 @@ function Root () {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Navbar />
-      <div id='detail'>
-        <Outlet />
-      </div>
+      <Outlet />
     </ThemeProvider>
   )
 }

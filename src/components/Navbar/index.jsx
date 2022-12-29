@@ -4,11 +4,12 @@ import { RxHamburgerMenu } from 'react-icons/rx'
 import {
   BurgerIcon,
   FlexContainer,
-  FontLogo,
+  Logo,
   LinksLabel,
   NavbarContainer,
   NavMenu
 } from './styles'
+import logo from '../../assets/logo_ia.png'
 
 function Navbar () {
   const [showNavMenu, setShowNavMenu] = useState(false)
@@ -19,8 +20,7 @@ function Navbar () {
     <NavbarContainer>
       <FlexContainer>
         <LinksLabel to='/'>
-          <FontLogo>BulkTech</FontLogo>
-          {/* <Logo src={logoBlanco} alt='Logo' /> */}
+          <Logo src={logo} alt='Logo' />
         </LinksLabel>
       </FlexContainer>
 
@@ -37,13 +37,13 @@ function Navbar () {
             <LinksLabel to='/'>Inicio</LinksLabel>
           </li>
           <li>
-            <LinksLabel to='community-link'>CommunityLink</LinksLabel>
+            <LinksLabel to='conectividad'>Conectividad</LinksLabel>
           </li>
           <li>
-            <LinksLabel to='/overwatch'>Overwatch</LinksLabel>
+            <LinksLabel to='/seguridad'>Seguridad</LinksLabel>
           </li>
           <li>
-            <LinksLabel to='/smart-ya'>SmartYa</LinksLabel>
+            <LinksLabel to='/domotica'>Domótica</LinksLabel>
           </li>
           <li>
             <LinksLabel to='/contacto'>Contacto</LinksLabel>
