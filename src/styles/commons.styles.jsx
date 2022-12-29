@@ -19,7 +19,6 @@ export const SubTitle = styled.h3`
 `
 
 export const GridContainer = styled.div`
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2.5rem;
   margin: 0 3rem 3rem 3rem;

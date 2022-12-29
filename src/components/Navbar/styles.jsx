@@ -38,23 +38,22 @@ export const FlexContainer = styled.div`
 `
 
 export const NavMenu = styled.ul`
-  font-size: 1rem;
-  display: flex;
-  gap: 1em;
-  transition: all 0.3s linear;
-  list-style-type: none;
-  @media screen and (max-width: 768px) {
-    padding: 1rem;
-    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.1);
-    flex-direction: column;
-    width: 50%;
-    top: 5rem;
-    position: absolute;
-    right: ${({ showNavMenu }) => (showNavMenu ? '0%' : '-50%')};
-    opacity: 1;
-    transition: all 0.5s ease;
-    background: ${({ theme }) => theme.colors.bg_color};
-  }
+display: flex;
+align-items: center;
+list-style: none;
+text-align: center;
+transition: all 0.3s linear;
+@media screen and (max-width: 960px) {
+  flex-direction: column;
+  width: 100%;
+  height: 94vh;
+  position: absolute;
+  top: 6vh;
+  left: ${({ showNavMenu }) => (showNavMenu ? 0 : '-100%')};
+  opacity: 1;
+  transition: all 0.5s ease;
+  background: ${({ theme }) => theme.colors.gray};
+} 
 `
 
 export const Logo = styled.img`
