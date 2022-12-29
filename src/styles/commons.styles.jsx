@@ -5,41 +5,17 @@ export const PageContainer = styled.div`
   min-height: 100vh;
   background-color: ${({ theme }) => theme.colors.gray};
   padding-top: 4rem;
-
-  .text-center {
-    width: 60ch;
-    line-height: 1.2rem;
-    margin-bottom: 2rem;
-    text-align: justify;
-    @media screen and (max-width: 680px) {
-      width: 40ch;
-    }
   }
 `
 export const Title = styled.h1`
   font-size: clamp(3rem, 4vw + 1rem, 5rem);
   text-align: center;
-
-  &.primary {
-    color: ${({ theme }) => theme.colors.primary};
-  }
-
-  &.secondary {
-    color: ${({ theme }) => theme.colors.secondary};
-  }
 `
 
 export const SubTitle = styled.h3`
   font-size: clamp(1.8rem, 4vw + 0.5rem, 3rem);
   color: white;
   text-align: center;
-
-  &.primary {
-    color: ${({ theme }) => theme.colors.primary};
-  }
-  &.secondary {
-    color: ${({ theme }) => theme.colors.secondary};
-  }
 `
 
 export const GridContainer = styled.div`

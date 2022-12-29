@@ -33,7 +33,6 @@ export const ImgWrapper = styled.div`
 
 `
 export const Img = styled.img`
-  border-radius: 100px;
   max-height: 25rem;
   max-width: 100%;
   object-fit: scale-down;

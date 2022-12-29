@@ -3,7 +3,7 @@ import GlobalStyle from '../styles/globalStyles'
 import Navbar from '../components/Navbar'
 import { Outlet } from 'react-router-dom'
 
-export const theme = {
+const theme = {
   colors: {
     conectividad: '#219ebc',
     seguridad: '#fb8500',
