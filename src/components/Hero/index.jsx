@@ -1,5 +1,5 @@
 import React from 'react'
-import world from '../../assets/world.svg'
+import hero from '../../assets/Hero.png'
 import {
   Column, HeroContainer,
   ImgWrapper,
@@ -7,11 +7,8 @@ import {
   TextWrapper,
   Title,
   Description,
-  LinksContainer,
-  LinkLabel,
-  Icon
+  LinkLabel
 } from './styles'
-import * as FaIcons from 'react-icons/fa'
 
 function Hero () {
   return (
@@ -20,27 +17,16 @@ function Hero () {
         <TextWrapper>
           <Title>BulkTech</Title>
           <Description>
-            Somos una empresa dedicada a ofrecer servicios de internet
-            satelital, desarrollo de aplicaciones web y plataformas de gestión,
-            domótica para la automatización de IoT en el hogar.
+            Especialistas en brindar soluciones tecnológicas
+            modernas a hogares e industrias, ya sea en conectividad
+            a internet en lugares remotos, sistema de seguridad o automatización.
           </Description>
-          <LinksContainer>
-            <LinkLabel target='_blank' href=''>
-              <Icon>
-                <FaIcons.FaLinkedin />
-              </Icon>
-            </LinkLabel>
-            <LinkLabel target='_blank' href=''>
-              <Icon>
-                <FaIcons.FaInstagram />
-              </Icon>
-            </LinkLabel>
-          </LinksContainer>
+          <LinkLabel to='/nosotros'>Saber más...</LinkLabel>
         </TextWrapper>
       </Column>
-      <Column hide>
+      <Column>
         <ImgWrapper>
-          <Img src={world} alt='world-internet' />
+          <Img src={hero} alt='world-internet' />
         </ImgWrapper>
       </Column>
     </HeroContainer>

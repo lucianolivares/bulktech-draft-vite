@@ -1,7 +1,7 @@
 import React from 'react'
 import { PageContainer, Title } from '../styles/commons.styles'
 
-const Contacto = () => {
+const Nosotros = () => {
   return (
     <PageContainer>
       <Title>Pagina web en desarrollo ⚒️👷‍♂️</Title>
@@ -9,4 +9,4 @@ const Contacto = () => {
   )
 }
 
-export default Contacto
+export default Nosotros

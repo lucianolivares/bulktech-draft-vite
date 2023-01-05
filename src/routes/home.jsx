@@ -12,7 +12,7 @@ const Home = () => {
       <Hero />
       <Conectividad />
       <Seguridad />
-      <Domotica />
+      {/* <Domotica /> */}
       <Footer />
     </PageContainer>
   )

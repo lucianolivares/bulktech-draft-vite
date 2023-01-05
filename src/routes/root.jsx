@@ -10,7 +10,8 @@ const theme = {
     domotica: '#8ecae6 ',
     dark: '#023047 ',
     black: '#000f16',
-    gray: '#f2f2f2'
+    gray: '#f2f2f2',
+    navcolor: '#424245'
   },
   media: {
     medium: '768px'

@@ -1,6 +1,5 @@
 import React from 'react'
 import conectividad from '../../assets/conectividad.png'
-import houses from '../../assets/houses.png'
 
 import {
   Column, HeroContainer,
@@ -8,26 +7,26 @@ import {
   Img,
   TextWrapper,
   Title,
-  Description
+  Description,
+  LinkLabel
 } from './styles'
 
 function Conectividad () {
   return (
     <HeroContainer>
-      <Column hide>
+      <Column>
         <ImgWrapper>
-          <Img src={conectividad} alt='casas conectadas' />
+          <Img src={conectividad} alt='conectividad simbol' />
         </ImgWrapper>
       </Column>
       <Column>
         <TextWrapper>
           <Title>Conectividad</Title>
           <Description>
-            Nuestro objetivo es ayudar a nuestros clientes a conectarse y aprovechar al máximo las oportunidades que ofrece la tecnología. Ofrecemos un servicio de internet satelital de alta calidad, con modalidad de suscripción, latencias bajas para aplicaciones que lo requieran y ancho de banda fijo.
+            Soluciones de conectividad a internet en lugares remotos,
+            con facilidades para implementar conexión comunitaria para reducir costos.
           </Description>
-          <ImgWrapper>
-            <Img src={houses} alt='houses-schematic' />
-          </ImgWrapper>
+          <LinkLabel to='/conectividad'>Ver más...</LinkLabel>
         </TextWrapper>
       </Column>
     </HeroContainer>

@@ -6,7 +6,7 @@ import Conectividad from './routes/conectividad'
 import Root from './routes/root'
 import Seguridad from './routes/seguridad'
 import Domotica from './routes/domotica'
-import Contacto from './routes/contacto'
+import Nosotros from './routes/nosotros'
 
 const router = createBrowserRouter([
   {
@@ -30,8 +30,8 @@ const router = createBrowserRouter([
         element: <Domotica />
       },
       {
-        path: 'contacto',
-        element: <Contacto />
+        path: 'nosotros',
+        element: <Nosotros />
       }
     ]
   }
