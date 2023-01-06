@@ -10,7 +10,6 @@ const Burger = () => {
       <StyledBurger open={open} onClick={() => setOpen(!open)}>
         <div />
         <div />
-        <div />
       </StyledBurger>
       <NavList open={open} action={setOpen} />
     </>

@@ -10,12 +10,17 @@ export const NavbarContainer = styled.nav`
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 0.5rem 4vw;
+  padding: 0.5rem 2rem;
   display: flex;
-  height: 4rem;
+  height: 48px;
   z-index: 21;
   justify-content: space-between;
+  opacity: 0.95;
   background-color: ${({ theme }) => theme.colors.navcolor};
+  backdrop-filter: blur(8px);
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+  }
 `
 
 export const NavMenu = styled.ul`
@@ -32,7 +37,6 @@ z-index: 20;
   padding-block: 1rem;
   left: 0;
   top: ${({ open }) => (open ? '2rem' : '-50vh')};
-  opacity: 1;
   transition: all 0.5s ease-in-out;
   background: ${({ theme }) => theme.colors.navcolor};
 } 
@@ -55,12 +59,13 @@ export const LinksLabel = styled(NavLink)`
 `
 
 export const StyledBurger = styled.div`
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 16px;
   position: fixed;
   top: 15px;
   right: 20px;
   z-index: 21;
+  gap: 4px;
   display: none;
   cursor: pointer;
   @media (max-width: 768px) {
@@ -69,9 +74,10 @@ export const StyledBurger = styled.div`
     flex-flow: column nowrap;
   }
   div {
-    width: 2rem;
-    height: 0.25rem;
-    background-color: ${({ open }) => open ? 'white' : 'white'};
+    width: 1rem;
+    height: 1px;
+    background-color: ${({ theme }) => theme.colors.white};
+    opacity: ${({ open }) => open ? '0.7' : '1'};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
@@ -79,10 +85,6 @@ export const StyledBurger = styled.div`
       transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'};
     }
     &:nth-child(2) {
-      transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
-      opacity: ${({ open }) => open ? 0 : 1};
-    }
-    &:nth-child(3) {
       transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'};
     }
   }

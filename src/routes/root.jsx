@@ -9,7 +9,7 @@ const theme = {
     accent: '#fb8500',
     black: '#000f16',
     white: '#f5f5f7',
-    navcolor: '#424245',
+    navcolor: '#1d1d1f',
     links: '#2997ff'
   },
   media: {
