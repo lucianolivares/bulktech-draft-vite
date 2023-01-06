@@ -1,6 +1,11 @@
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
+import Logo from '../Logo/Logo'
 
+export const LogoStyled = styled(Logo)`
+  height: -webkit-fill-available;
+  width: 48px;
+`
 export const NavbarContainer = styled.nav`
   position: fixed;
   top: 0;
@@ -33,25 +38,19 @@ z-index: 20;
 } 
 `
 
-export const Logo = styled.img`
-  height: -webkit-fill-available;
-  object-fit: scale-down;
-  z-index: 22;
-
-`
-
 export const LinksLabel = styled(NavLink)`
   cursor: pointer;
-  font-family: 'Poppins', sans-serif;
   text-decoration: none;
-  color: white;
-  font-size: 1.3rem;
+  color: ${({ theme }) => theme.colors.white};
+  fill: ${({ theme }) => theme.colors.white};
+  font-size: 1.1rem;
   z-index: 25;
+  opacity: 0.7;
   &.active {
-    color: ${({ theme }) => theme.colors.seguridad};
+    opacity: 1;
   }
   :hover {
-    color: ${({ theme }) => theme.colors.seguridad};
+    opacity: 1;
   }
 `
 

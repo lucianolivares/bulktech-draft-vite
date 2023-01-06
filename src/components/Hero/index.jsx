@@ -5,10 +5,10 @@ import {
   ImgWrapper,
   Img,
   TextWrapper,
-  Title,
   Description,
   LinkLabel
 } from './styles'
+import { Title } from '../../styles/commons.styles'
 
 function Hero () {
   return (

@@ -3,13 +3,13 @@ import { NavLink } from 'react-router-dom'
 
 export const HeroContainer = styled.div`
   display: flex;
-  margin-top: 1rem;
   flex-direction: column;
   padding-inline: 4rem;
-  padding-top: 4rem;
+  margin-top: 0.8rem;
+  padding-top: 1rem;
   background: rgb(1,2,26);
   background: linear-gradient(90deg, rgba(1,2,26,1) 0%, rgba(2,6,86,1) 50%, rgba(1,2,26,1) 100%);
-  @media screen and (max-width: 920px) {
+  @media screen and (max-width: 768px) {
     padding-inline: 0;
   }
 `
@@ -27,39 +27,24 @@ export const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 2rem;
-  @media screen and (max-width: 920px) {
+  @media screen and (max-width: 768px) {
     padding-inline: 2rem;
   }
-`
-
-export const Title = styled.h1`
-  color: ${({ theme }) => theme.colors.primary};
-  font-weight: 400;
-  font-size: clamp(2rem, 10vw, 3rem);
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  line-height: 100%;
-  text-align: center;
-  color: white;
   `
 
 export const Description = styled.p`
   display: flex;
-  color: white;
-  font-size: 1.1rem;
-  padding-bottom: 1rem;
-  max-width: 30rem;
+  color: ${({ theme }) => theme.colors.white};
+  font-size: 1rem;
+  max-width: 25rem;
   font-weight: 400;
   text-align: center;
-  @media screen and (max-width: 920px) {
-    font-size: 1rem;
-  }
   `
 
 export const LinkLabel = styled(NavLink)`
-  color: blue;
+  color: ${({ theme }) => theme.colors.links};
   text-decoration: none;
+  padding-bottom: 2rem;
   font-size: 1rem;
   cursor: pointer;
   &:hover {
@@ -75,7 +60,22 @@ export const ImgWrapper = styled.div`
   
   `
 export const Img = styled.img`
-    max-height: 25rem;
-    max-width: 100%;
+    height: 320px;
     object-fit: scale-down;
+    @media screen and (max-width: 768px) {
+      height: 180px;
+    }
   `
+export const GradientTitle = styled.h1`
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43); 
+  font-weight: 500;
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  line-height: 100%;
+  text-align: center;
+`

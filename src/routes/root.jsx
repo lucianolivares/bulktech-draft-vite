@@ -5,13 +5,12 @@ import { Outlet } from 'react-router-dom'
 
 const theme = {
   colors: {
-    conectividad: '#219ebc',
-    seguridad: '#fb8500',
-    domotica: '#8ecae6 ',
-    dark: '#023047 ',
+    primary: '#0554F2',
+    accent: '#fb8500',
     black: '#000f16',
-    gray: '#f2f2f2',
-    navcolor: '#424245'
+    white: '#f5f5f7',
+    navcolor: '#424245',
+    links: '#2997ff'
   },
   media: {
     medium: '768px'

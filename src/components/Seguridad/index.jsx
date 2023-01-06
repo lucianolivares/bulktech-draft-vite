@@ -5,17 +5,17 @@ import {
   ImgWrapper,
   Img,
   TextWrapper,
-  Title,
   Description,
   LinkLabel
 } from './styles'
+import { Title } from '../../styles/commons.styles'
 
 function Seguridad () {
   return (
     <HeroContainer>
       <Column>
         <TextWrapper>
-          <Title>Seguridad</Title>
+          <Title white>Seguridad</Title>
           <Description>
             Sistemas de vigilancia CCTV adaptables según necesidad e
             implementación de diferentes tecnologías de seguridad, como reconocimiento facial e inteligencia artificial.

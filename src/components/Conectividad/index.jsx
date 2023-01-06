@@ -5,11 +5,13 @@ import {
   Column, HeroContainer,
   ImgWrapper,
   Img,
+  GradientTitle,
   TextWrapper,
-  Title,
   Description,
   LinkLabel
 } from './styles'
+
+import { Title } from '../../styles/commons.styles'
 
 function Conectividad () {
   return (
@@ -21,7 +23,7 @@ function Conectividad () {
       </Column>
       <Column>
         <TextWrapper>
-          <Title>Conectividad</Title>
+          <GradientTitle white>Conectividad</GradientTitle>
           <Description>
             Soluciones de conectividad a internet en lugares remotos,
             con facilidades para implementar conexión comunitaria para reducir costos.
