@@ -1,14 +1,13 @@
 import styled from 'styled-components'
+import { NavLink } from 'react-router-dom'
 
 export const HeroContainer = styled.div`
-  display: grid;
-  min-height: 50vh;
-  padding: 0 4rem;
-  grid-template-columns: 50% 50%;
-  z-index: 1;
-  background-color: #f9f9f9;
-  @media screen and (max-width: 920px) {
-    grid-template-columns: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 4rem;
+  padding-top: 1rem;
+  @media screen and (max-width: 768px) {
+    padding-inline: 0;
   }
 `
 
@@ -18,78 +17,47 @@ export const Column = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  @media screen and (max-width: 920px) {
-    display: ${props => props.hide ? 'none' : 'flex'}
-  }
 `
 
 export const TextWrapper = styled.div`
-  @media screen and (max-width: 920px) {
-    padding-left: 0;
-  }
-`
-
-export const ImgWrapper = styled.div`
-  width: 100%;
+  text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-
-`
-export const Img = styled.img`
-  max-height: 25rem;
-  max-width: 100%;
-  object-fit: scale-down;
-`
-export const TopLine = styled.p`
-  color: ${({ lightTopLine }) => (lightTopLine ? '#white' : '#4B59F7')};
-  font-size: 1.3rem;
-  font-weight: 600;
-  letter-spacing: 0.1rem;
-`
-
-export const Title = styled.h1`
-  color: ${({ theme }) => theme.colors.primary};
-  font-weight: 400;
-  font-size: clamp(2rem, 10vw, 3rem);
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  line-height: 100%;
+  @media screen and (max-width: 768px) {
+    padding-inline: 2rem;
+  }
 `
 
 export const Description = styled.p`
   display: flex;
-  font-size: 1.2rem;
-  padding-bottom: 1rem;
-  max-width: 30rem;
-`
+  font-size: 1rem;
+  max-width: 25rem;
+  font-weight: 400;
+  text-align: center;
+  `
 
-export const Info = styled(Description)`
-  word-break: break-all;
-  padding-bottom: 0.3rem;
-`
-export const LinkLabel = styled.a`
-  color: white;
+export const LinkLabel = styled(NavLink)`
+  color: ${({ theme }) => theme.colors.links};
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1rem;
   cursor: pointer;
   &:hover {
-    transform: scale(1.05);
-    color: ${({ theme }) => theme.colors.secondary};
+    text-decoration:underline;
   }
-`
+  `
 
-export const Icon = styled.div`
-  display: flex;
-  align-items: center;
-  padding-right: 1rem;
-`
-
-export const LinksContainer = styled.div`
-  display: flex;
-  padding-top: 1rem;
-  padding-bottom: 3rem;
-  @media screen and (max-width: 920px) {
-    padding-bottom: 0.5rem;
-  }
-`
+export const ImgWrapper = styled.div`
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  `
+export const Img = styled.img`
+    height: 320px;
+    object-fit: scale-down;
+    @media screen and (max-width: 768px) {
+      height: 180px;
+    }
+  `

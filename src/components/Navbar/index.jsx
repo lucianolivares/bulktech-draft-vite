@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import {
   LinksLabel,
   LogoStyled,
@@ -6,12 +7,14 @@ import {
 import Burger from './Burger'
 
 function Navbar () {
+  const [open, setOpen] = useState(false)
+
   return (
     <NavbarContainer>
-      <LinksLabel to='/'>
+      <LinksLabel to='/' onClick={() => setOpen(false)}>
         <LogoStyled />
       </LinksLabel>
-      <Burger />
+      <Burger open={open} setOpen={setOpen} />
     </NavbarContainer>
   )
 }

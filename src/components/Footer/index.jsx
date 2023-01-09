@@ -1,10 +1,21 @@
 
-import { FooterContainer, Text } from './styles'
+import {
+  FooterContainer,
+  Text,
+  Title,
+  LogoStyled,
+  RightSide
+} from './styles'
 
 function Footer () {
   return (
     <FooterContainer>
-      <Text>Sitio web en desarrollo, disculpe las molestias 👨‍💻⚙️</Text>
+      <LogoStyled />
+      <RightSide>
+        <Title>BulkTech</Title>
+        <Text>La Serena, Chile</Text>
+
+      </RightSide>
     </FooterContainer>
   )
 }

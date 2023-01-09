@@ -1,8 +1,8 @@
 import { NavMenu, LinksLabel } from './styles'
 
-const NavList = ({ open, action }) => {
+const NavList = ({ open, setOpen }) => {
   return (
-    <NavMenu open={open} onClick={() => action(!open)}>
+    <NavMenu open={open} onClick={() => setOpen(!open)}>
       <li>
         <LinksLabel to='/conectividad'>Conectividad</LinksLabel>
       </li>

@@ -1,5 +1,5 @@
 import React from 'react'
-import camara from '../../assets/camara.png'
+import camara from '../../assets/camara.webp'
 import {
   Column, HeroContainer,
   ImgWrapper,
@@ -15,7 +15,7 @@ function Seguridad () {
     <HeroContainer>
       <Column>
         <TextWrapper>
-          <Title white>Seguridad</Title>
+          <Title>Seguridad</Title>
           <Description>
             Sistemas de vigilancia CCTV adaptables según necesidad e
             implementación de diferentes tecnologías de seguridad, como reconocimiento facial e inteligencia artificial.

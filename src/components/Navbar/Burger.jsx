@@ -1,17 +1,14 @@
-import { useState } from 'react'
 import { StyledBurger } from './styles'
 import NavList from './NavList'
 
-const Burger = () => {
-  const [open, setOpen] = useState(false)
-
+const Burger = ({ open, setOpen }) => {
   return (
     <>
       <StyledBurger open={open} onClick={() => setOpen(!open)}>
         <div />
         <div />
       </StyledBurger>
-      <NavList open={open} action={setOpen} />
+      <NavList open={open} setOpen={setOpen} />
     </>
   )
 }

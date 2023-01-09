@@ -5,7 +5,6 @@ import {
   Column, HeroContainer,
   ImgWrapper,
   Img,
-  GradientTitle,
   TextWrapper,
   Description,
   LinkLabel
@@ -23,7 +22,7 @@ function Conectividad () {
       </Column>
       <Column>
         <TextWrapper>
-          <GradientTitle white>Conectividad</GradientTitle>
+          <Title white>Conectividad</Title>
           <Description>
             Soluciones de conectividad a internet en lugares remotos,
             con facilidades para implementar conexión comunitaria para reducir costos.
