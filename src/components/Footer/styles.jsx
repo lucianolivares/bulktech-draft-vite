@@ -14,8 +14,13 @@ export const FooterStyled = styled.footer`
 export const FooterContainer = styled.div`
   display: flex;
   gap: 2rem;
-  justify-content: end;
-  @media screen and (max-width: 490px) {
+  justify-content: center;
+  @media screen and (max-width: 768px) {
+    justify-content: end;
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 480px) {
+    gap: 1rem;
     flex-direction: column;
   }
 `
@@ -23,11 +28,10 @@ export const FooterContainer = styled.div`
 export const ImgWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   gap: 0.5rem;
   @media screen and (max-width: 768px) {
-    justify-content: end;
+    align-items: flex-end;
     }
 `
 
@@ -40,20 +44,22 @@ export const LogoStyled = styled(Logo)`
 export const Row = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-end;
 
 `
 
-export const Title = styled.h2`
+export const Title = styled(NavLink)`
   color: ${({ theme }) => theme.colors.white};
+  font-family: 'Unbounded', cursive;
   font-weight: 400;
   font-size: 1.2rem;
+  text-decoration: none;
+  cursor: pointer;
 `
 
 export const Link = styled.a`
   color: ${({ theme }) => theme.colors.white};
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   opacity: 0.8;
   cursor: pointer;
   :hover {
@@ -74,6 +80,14 @@ export const NavLinkStyled = styled(NavLink)`
 
 export const Label = styled.p`
   color: ${({ theme }) => theme.colors.white};
-  text-align: end;
+  text-align: center;
   font-size: 0.8rem;
+  b {
+    font-family: 'Unbounded', cursive;
+    font-weight: 400;
+    color: ${({ theme }) => theme.colors.white};
+  }
+  @media screen and (max-width: 768px) {
+    text-align: end;
+  }
 `

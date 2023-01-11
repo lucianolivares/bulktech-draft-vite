@@ -16,31 +16,38 @@ function Footer () {
     <FooterStyled>
       <FooterContainer>
         <Row>
-          <Title>Nosotros</Title>
+          <Title to='/conectividad'>Conectividad</Title>
+          <NavLinkStyled preventScrollReset>Kits StarLink</NavLinkStyled>
+          <NavLinkStyled preventScrollReset>Ejemplos</NavLinkStyled>
+          <NavLinkStyled preventScrollReset>Hogar Wifi</NavLinkStyled>
+          <NavLinkStyled preventScrollReset>Wifi Mesh</NavLinkStyled>
+        </Row>
+        <Row>
+          <Title to='/seguridad'>Seguridad</Title>
+          <NavLinkStyled preventScrollReset>Hogar Wifi</NavLinkStyled>
+          <NavLinkStyled preventScrollReset>Comercial Lite</NavLinkStyled>
+          <NavLinkStyled preventScrollReset>Comercial IP 3B</NavLinkStyled>
+          <NavLinkStyled preventScrollReset>Comercial IP Pro</NavLinkStyled>
+        </Row>
+        <Row>
+          <Title to='/domotica'>Domótica</Title>
+          <NavLinkStyled preventScrollReset>Kits</NavLinkStyled>
+          <NavLinkStyled preventScrollReset>Asistentes</NavLinkStyled>
+          <NavLinkStyled preventScrollReset>Home Assistant</NavLinkStyled>
+          <NavLinkStyled preventScrollReset>SmartHome</NavLinkStyled>
+        </Row>
+        <Row>
+          <Title to='/nosotros'>Nosotros</Title>
           <Link>Instagram</Link>
           <Link>Twitter</Link>
           <Link>LinkedIn</Link>
           <Link>mail</Link>
         </Row>
-        <Row>
-          <Title>Conectividad</Title>
-          <NavLinkStyled>Kits StarLink</NavLinkStyled>
-          <NavLinkStyled>Ejemplos</NavLinkStyled>
-          <NavLinkStyled>Hogar Wifi</NavLinkStyled>
-          <NavLinkStyled>Wifi Mesh</NavLinkStyled>
-        </Row>
-        <Row>
-          <Title>Seguridad</Title>
-          <NavLinkStyled>Hogar Wifi</NavLinkStyled>
-          <NavLinkStyled>Comercial Lite</NavLinkStyled>
-          <NavLinkStyled>Comercial IP 3B</NavLinkStyled>
-          <NavLinkStyled>Comercial IP Pro</NavLinkStyled>
-        </Row>
       </FooterContainer>
       <ImgWrapper>
         <LogoStyled />
       </ImgWrapper>
-      <Label>BulkTech © - La Serena, Chile</Label>
+      <Label><b>BulkTech ©</b> La Serena, Chile</Label>
     </FooterStyled>
   )
 }

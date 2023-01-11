@@ -4,7 +4,8 @@ import { PageContainer, Title } from '../styles/commons.styles'
 const Seguridad = () => {
   return (
     <PageContainer>
-      <Title>Pagina web en desarrollo ⚒️👷‍♂️</Title>
+      <Title>Seguridad</Title>
+      <p className='working'>Pagina web en desarrollo ⚒️👷‍♂️</p>
     </PageContainer>
   )
 }

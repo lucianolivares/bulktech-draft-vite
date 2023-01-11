@@ -1,7 +1,7 @@
 import { ThemeProvider } from 'styled-components'
 import GlobalStyle from '../styles/globalStyles'
 import Navbar from '../components/Navbar'
-import { Outlet } from 'react-router-dom'
+import { Outlet, ScrollRestoration } from 'react-router-dom'
 import Footer from '../components/Footer'
 
 const theme = {
@@ -21,6 +21,7 @@ const theme = {
 function Root () {
   return (
     <ThemeProvider theme={theme}>
+      <ScrollRestoration />
       <GlobalStyle />
       <Navbar />
       <Outlet />

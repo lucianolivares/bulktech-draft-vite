@@ -4,7 +4,8 @@ import { PageContainer, Title } from '../styles/commons.styles'
 const Nosotros = () => {
   return (
     <PageContainer>
-      <Title>Pagina web en desarrollo ⚒️👷‍♂️</Title>
+      <Title>Un gusto conocerte!</Title>
+      <p className='working'>Pagina web en desarrollo ⚒️👷‍♂️</p>
     </PageContainer>
   )
 }
