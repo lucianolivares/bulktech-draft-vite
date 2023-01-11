@@ -2,6 +2,7 @@ import { ThemeProvider } from 'styled-components'
 import GlobalStyle from '../styles/globalStyles'
 import Navbar from '../components/Navbar'
 import { Outlet } from 'react-router-dom'
+import Footer from '../components/Footer'
 
 const theme = {
   colors: {
@@ -23,6 +24,7 @@ function Root () {
       <GlobalStyle />
       <Navbar />
       <Outlet />
+      <Footer />
     </ThemeProvider>
   )
 }
