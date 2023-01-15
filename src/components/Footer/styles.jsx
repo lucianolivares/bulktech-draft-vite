@@ -29,10 +29,6 @@ export const ImgWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  @media screen and (max-width: 768px) {
-    align-items: flex-end;
-    }
 `
 
 export const LogoStyled = styled(Logo)`
@@ -44,7 +40,7 @@ export const LogoStyled = styled(Logo)`
 export const Row = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 
 `
 
@@ -86,8 +82,5 @@ export const Label = styled.p`
     font-family: 'Unbounded', cursive;
     font-weight: 400;
     color: ${({ theme }) => theme.colors.white};
-  }
-  @media screen and (max-width: 768px) {
-    text-align: end;
   }
 `
