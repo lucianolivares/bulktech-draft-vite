@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const PageContainer = styled.div`
   display: grid;
   min-height: 80vh;
-  width: 100%;
   background-color: white;
   padding-top: 48px;
   .working {
