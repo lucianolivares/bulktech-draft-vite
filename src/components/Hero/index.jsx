@@ -1,36 +1,29 @@
-import React from 'react'
-import hero from '../../assets/Hero.webp'
 import {
-  Column, HeroContainer,
-  ImgWrapper,
-  Img,
-  TextWrapper,
+  FlexColumn,
+  Title,
   Description,
+  Img,
   LinkLabel
 } from './styles'
-import { Title } from '../../styles/commons.styles'
 
-function Hero () {
+export default function Hero ({
+  title,
+  description,
+  link,
+  img,
+  altImage,
+  dark,
+  imgFirst,
+  marginTop
+}) {
   return (
-    <HeroContainer>
-      <Column>
-        <TextWrapper>
-          <Title>BulkTech</Title>
-          <Description>
-            Especialistas en brindar soluciones tecnológicas
-            modernas a hogares e industrias, ya sea en conectividad
-            a internet en lugares remotos, sistema de seguridad o automatización.
-          </Description>
-          <LinkLabel to='/nosotros'>Saber más...</LinkLabel>
-        </TextWrapper>
-      </Column>
-      <Column>
-        <ImgWrapper>
-          <Img src={hero} alt='world-internet' />
-        </ImgWrapper>
-      </Column>
-    </HeroContainer>
+    <FlexColumn dark={dark} marginTop={marginTop}>
+      <Title>{title}</Title>
+      <Description dark={dark}>{description}</Description>
+      <LinkLabel to={link} imgFirst={imgFirst}>
+        Ver más...
+      </LinkLabel>
+      <Img src={img} alt={altImage} imgFirst={imgFirst} />
+    </FlexColumn>
   )
 }
-
-export default Hero
