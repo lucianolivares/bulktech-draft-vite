@@ -11,7 +11,8 @@ const theme = {
     black: '#000f16',
     white: '#f5f5f7',
     navcolor: '#1d1d1f',
-    links: '#2997ff'
+    links: '#2997ff',
+    gradient: 'linear-gradient(90deg, rgba(1,2,26,1) 0%, rgba(2,6,86,1) 50%, rgba(1,2,26,1) 100%)'
   },
   media: {
     medium: '768px'

@@ -3,8 +3,9 @@ import styled from 'styled-components'
 export const PageContainer = styled.div`
   display: grid;
   min-height: 80vh;
-  background-color: ${({ theme }) => theme.colors.white};
-  padding-top: 4rem;
+  width: 100%;
+  background-color: white;
+  padding-top: 48px;
   .working {
     text-align: center;
   }
