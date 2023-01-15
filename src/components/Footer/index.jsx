@@ -1,4 +1,3 @@
-
 import {
   FooterStyled,
   FooterContainer,
@@ -11,7 +10,7 @@ import {
   Label
 } from './styles'
 
-function Footer () {
+export default function Footer () {
   return (
     <FooterStyled>
       <FooterContainer>
@@ -51,5 +50,3 @@ function Footer () {
     </FooterStyled>
   )
 }
-
-export default Footer

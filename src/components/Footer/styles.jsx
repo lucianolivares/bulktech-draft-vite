@@ -3,10 +3,10 @@ import { NavLink } from 'react-router-dom'
 import Logo from '../Logo/Logo'
 
 export const FooterStyled = styled.footer`
+  display: grid;
   background-color: ${({ theme }) => theme.colors.navcolor};
   padding-block: 1rem 1rem;
   padding-inline: 1rem;
-  display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
 `
@@ -40,7 +40,10 @@ export const LogoStyled = styled(Logo)`
 export const Row = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
+  @media screen and (max-width: 480px) {
+    align-items: center;
+  }
 
 `
 
@@ -58,9 +61,11 @@ export const Link = styled.a`
   font-size: 0.8rem;
   opacity: 0.8;
   cursor: pointer;
+  text-align: center;
   :hover {
     opacity: 1;
   }
+
 `
 
 export const NavLinkStyled = styled(NavLink)`
