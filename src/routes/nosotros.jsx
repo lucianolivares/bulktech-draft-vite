@@ -1,10 +1,9 @@
 import React from 'react'
-import { PageContainer } from '../styles/commons.styles'
+import { LargeWidth, PageContainer, RevertTitle, Title } from '../styles/commons.styles'
 import Hero from '../components/Hero'
 
 import nosotrosUno from '../assets/nosotros-1.svg'
-import nosotrosDos from '../assets/nosotros-2.svg'
-import nosotrosTres from '../assets/nosotros-3.svg'
+import nosotrosDos from '../assets/nosotros-2.png'
 import nosotrosCuatro from '../assets/nosotros-4.svg'
 
 const Nosotros = () => {
@@ -16,21 +15,23 @@ const Nosotros = () => {
         img={nosotrosUno}
         altImage='A person connecting a laptop to a server'
       />
-      <Hero
-        title='Misión'
-        description='Brindar tecnología en cualquier lugar, para hacer tu vida más simple.'
-        img={nosotrosDos}
-        altImage='A person browser internet'
-        dark
-        marginTop
-      />
-      <Hero
-        title='Visión'
-        description='Ayudar a las personas y negocios a optimizar su procesos con ayuda de la tecnología, permitiéndoles alcanzar su máximo potencial.'
-        img={nosotrosTres}
-        altImage='A person browser internet'
-        dark
-      />
+      <LargeWidth dark marginTop>
+        <div className='flex leftside'>
+          <div>
+            <Title>Misión</Title>
+            <p>Brindar tecnología en cualquier lugar, para hacer tu vida más simple.</p>
+          </div>
+          <div>
+            <RevertTitle>Visión</RevertTitle>
+            <p>Ayudar a las personas y negocios a optimizar su procesos con ayuda de la tecnología, permitiéndoles alcanzar su máximo potencial.</p>
+          </div>
+        </div>
+        <div className='flex rightside'>
+          <img src={nosotrosDos} />
+
+        </div>
+
+      </LargeWidth>
       <Hero
         title='Mantenerse Actualizado'
         description='Nos esforzamos para mantenernos a la vanguardia de las últimas tecnologías y poder brindar soluciones innovadoras que ayuden a nuestros clientes a conectarse y aprovechas al máximo las oportunidades que ofrece la tecnología.'

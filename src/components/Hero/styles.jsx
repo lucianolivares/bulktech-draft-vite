@@ -8,7 +8,6 @@ export const FlexColumn = styled.div`
   text-align: center;
   padding-inline: 4rem;
   padding-top: 1rem;
-
   background: ${({ dark, theme }) =>
     dark ? theme.colors.gradient : theme.colors.white};
 
@@ -19,7 +18,7 @@ export const FlexColumn = styled.div`
   };
   
   @media screen and (max-width: 768px) {
-    padding-inline: 2rem;
+    padding-inline: 0.5rem;
   }
 `
 
@@ -47,11 +46,10 @@ export const Title = styled.h1`
 
 export const Description = styled.p`
   order: 2;
-  display: flex;
   font-size: clamp(0.8rem, 4vw, 1rem);
-  max-width: 25rem;
+  max-width: 80ch;
   font-weight: 400;
-  text-align: start;
+  text-align: center;
   padding-bottom: 0.8rem;;
   color: ${({ dark, theme }) => (dark ? theme.colors.white : 'black')};
 `
@@ -72,7 +70,7 @@ export const LinkLabel = styled(NavLink)`
 export const Img = styled.img`
     order: ${props => props.imgFirst ? 0 : 4};
     height: 320px;
-    object-fit: scale-down;
+    object-fit: contain;
     @media screen and (max-width: 768px) {
       height: 150px;
       width: 260px;
